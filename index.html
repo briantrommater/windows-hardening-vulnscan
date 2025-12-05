@@ -44,3 +44,43 @@ font-size: 0.9em;
 
 <h2>Project Structure</h2>
 <pre><code>windows-hardening-vulnscan/
+├── README.md
+├── Hardening/
+│ ├── baseline_checklist.md
+│ ├── applied_settings.md
+│ └── scripts/
+│ └── disable_services.ps1
+├── Vulnerability-Scan/
+│ ├── scan_instructions.md
+│ ├── results/
+│ │ └── sample_scan_report.txt
+│ └── screenshots/
+├── Logs/
+│ └── event_logs_notes.md
+└── Summary/
+└── findings_and_mitigations.md
+</code></pre>
+
+
+<h2>Objective</h2>
+<p>This project demonstrates the ability to apply Windows hardening, run a basic vulnerability scan, and document security findings clearly.</p>
+
+
+<h2>Sample PowerShell Script</h2>
+<pre><code># disable_services.ps1
+Set-Service -Name "Fax" -StartupType Disabled
+Set-Service -Name "XblGameSave" -StartupType Disabled
+Set-Service -Name "DiagTrack" -StartupType Disabled
+
+
+Write-Output "Selected services disabled successfully."</code></pre>
+
+
+<p>For full documentation, see the repository contents.</p>
+</div>
+</body>
+</html>
+```
+
+<h2>Project Structure</h2>
+<pre><code>windows-hardening-vulnscan/
