@@ -63,3 +63,66 @@ Each change includes:
 **Reason:** SMBv1 is vulnerable (e.g., EternalBlue, WannaCry).
 
 **Command Used:**
+
+---
+
+## 6. Hardened Local Administrator Account
+**Reason:** Prevents easy privilege escalation.
+
+**Actions Taken:**
+- Renamed `Administrator` account  
+- Disabled remote login for local admins  
+- Set a long, unique administrator password  
+
+**Method:** Local Users & Groups (`lusrmgr.msc`)
+
+---
+
+## 7. Removed Dangerous Default Settings
+**Reason:** Eliminates common misconfigurations attackers exploit.
+
+**Actions:**
+- Disabled AutoRun & AutoPlay  
+- Removed unused local user accounts  
+- Disabled guest account  
+- Turned off remote assistance  
+
+---
+
+## 8. Applied Windows Update Configuration
+**Reason:** Ensures system receives security patches promptly.
+
+**Settings:**
+- Enabled automatic updates  
+- Set “Notify before restart” to avoid forced reboots  
+
+---
+
+## 9. Browser Hardening (Edge / Chrome)
+**Reason:** Reduces phishing & malware exposure.
+
+**Changes:**
+- Enabled Safe Browsing / SmartScreen  
+- Disabled saving passwords in browser  
+- Removed untrusted extensions  
+
+---
+
+## 10. Verified System Integrity
+**Reason:** Ensures OS is not corrupted.
+
+**Commands Executed:**
+
+---
+
+# Summary
+
+All configurations above were applied and tested.  
+These hardening measures collectively reduce:
+- Attack surface  
+- Malware exposure  
+- Unauthorized access risk  
+- Lateral movement opportunities  
+
+This file serves as documentation of the **actual work performed** in the hardening phase of the project.
+
